@@ -4,9 +4,9 @@
 .cards{
   width: 235px;
   margin-bottom: 30px;
-  margin-left: 5%;
-  /* margin-right: 2%; */
-  margin-top: 3%;
+  margin-left: 2.5%;
+  margin-right: 1.5%;
+  margin-top: 0%;
 }
 .card .card-image img {
   display: block;
@@ -29,16 +29,16 @@
   border-radius: 0 0 2px 2px;
 }
 .forProjects{
-  width: 97%;
-    box-sizing: border-box;
-    background-color: white;
-    margin: 50px auto;
-    /* padding: 30px 92px; */
-    display: inline-flex;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    height: auto;
+  width: 88%;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 50px 8%;
+  padding: 30px 0px 30px 0px;
+  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  height: auto;
  
 }
 .App {
@@ -107,3 +107,11 @@ input[type=button] {
   border: 1px solid #00000017;
   font-size: 16px;   
 }
+.bla{
+  position: fixed;
+  right: 0;
+}
+
+
+
+

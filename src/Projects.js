@@ -1,62 +1,43 @@
 import React, { Component } from 'react';
 import {Button, Icon,Card,CardTitle,image} from 'react-materialize'
-// import Home from './Login';
+import  CardHeader from './CardHeader';
 import './App.css';
+import Modal from 'react-responsive-modal';
 
 class Projects extends Component {
+    state = {
+        open: false,
+      };
+     
+      onOpenModal = () => {
+        this.setState({ open: true });
+      };
+     
+      onCloseModal = () => {
+        this.setState({ open: false });
+      };
   render() {
     return (
+        <div>
+        <button className="bla" onClick={this.onOpenModal}>add</button>
       <div className="forProjects">
-       
-      <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  <Card header={<CardTitle reveal image={require("./lap.jpg")} waves='light'/>}
-      title="Card Title"
-      className="cards"
-      reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
-      <p><a href="#">This is a link</a></p>
-  </Card>
-  </div>   
+         <CardHeader/> 
+         <CardHeader/> 
+         <CardHeader/> 
+         <CardHeader/> 
+         <CardHeader/> 
+         <CardHeader/>
+         <CardHeader/> 
+         <CardHeader/> 
+         <CardHeader/>
+         <CardHeader/> 
+         <CardHeader/> 
+         <CardHeader/> 
+    </div> 
+    <Modal open={this.state.open} onClose={this.onCloseModal} center>
+          <h2>Simple centered modal</h2>
+        </Modal>
+  </div>  
     );
   }
 }

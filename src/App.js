@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+import {routes} from './routes';
 import Codepen from './Codepen';
-import Projects from './Projects';
-import './App.css';
+import SideBar from './Index';
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div>
-         <Codepen/>
-         <Projects/>
-         </div>
+        
+           <SideBar/>
+ 
     );
   }
 }

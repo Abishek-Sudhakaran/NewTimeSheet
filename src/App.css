@@ -1,3 +1,46 @@
+  body{
+    background: #f4f7f6 
+  }
+.cards{
+  width: 235px;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  /* margin-right: 2%; */
+  margin-top: 3%;
+}
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 170px;
+  width: 100%;
+}
+.card .card-content .card-title {
+  display: block;
+  /* line-height: 32px; */
+  /* margin-bottom: 8px; */
+}
+.card .card-content {
+  padding: 12px;
+  border-radius: 0 0 2px 2px;
+}
+.forProjects{
+  width: 97%;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 50px auto;
+    /* padding: 30px 92px; */
+    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    height: auto;
+ 
+}
 .App {
   text-align: center;
 }
@@ -29,4 +72,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+.loginForm{
+  width: 250px;
+  position: relative;
+  top:200px;
+margin: auto;
+  display: block;
+  background-color:black  ;
+  opacity: 0.4;
+  padding: 70px;
+  border-radius: 10px;  
+}
+input[type=textField] {
+  margin-top: 6px;
+  height: 30px;
+  outline: none;
+  width:100%;
+  border-radius: 5px;
+  border-bottom: 1px solid #00000017;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 14px; 
+}
+input[type=button] {
+  margin-top: 6px;
+  height: 35px;
+  border: none;
+  width:102%;
+  color:white;
+  background-color: #2196f3;
+  border-radius: 5px;
+  border: 1px solid #00000017;
+  font-size: 16px;   
 }
